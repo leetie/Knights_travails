@@ -1,0 +1,38 @@
+write a function that takes a destination position, and current position, anda  counter
+                        current position can equal an array of values
+def find_path destination, current_position, counter=0
+  current_position.each do |i|
+    if i == destination return
+  end
+
+  #if not, take current position and find possible moves from there
+
+
+  so basically, check to see if start position equals destination, 
+  if not, populate children with all possible legal moves and check to
+  see if they equal destination. if not, populate all those children with
+  legal moves from their position and see if that equals destination. repeat
+  recursively until destination is reached
+
+  read self value
+    destination value not equal?
+    generate children, add array of children to queue
+    visit array of children.each
+    item not equal value? generate children; add its children to queue
+  end
+
+
+start with current position
+make it a node with a value of its position
+if its value equals destination, return
+else populate its child array with nodes equal to the value of its possible moves
+
+bfs search and generate
+
+return if current_nove.value == destination
+current_node.children.map do |i|
+
+for each item in queue, we want to see if it equals the destination value
+if not, generate children for each item in queue and move on
+
+
